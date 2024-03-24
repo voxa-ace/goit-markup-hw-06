@@ -56,8 +56,82 @@
             </li>
           </ul>
         </address>
+
+        <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+          <svg class="menu-toggle-icon" width="32" height="22">
+            <use href="./images/icons.svg#menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
+
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-close-toggle js-close-menu">
+        <svg class="modal-close-button-cross" width="8" height="8">
+          <use href="./images/icons.svg#cross"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu-navigation-tabs">
+        <li>
+          <a href="./index.html" class="mobile-menu-nav-link mobile-menu-current">Studio</a>
+        </li>
+        <li>
+          <a href="./portfolio.html" class="mobile-menu-nav-link">Portfolio</a>
+        </li>
+        <li>
+          <a href="#" class="mobile-menu-nav-link">Contacts</a>
+        </li>
+      </ul>
+
+      <div>
+        <ul class="mobile-menu-addresses-list">
+          <li>
+            <a href="tel:+110001111111" class="mobile-menu-tel-link"
+            >+11 (000) 111-11-11</a
+            >
+          </li>
+          <li>
+            <a href="mailto:info@devstudio.com" class="mobile-menu-email-link"
+            >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+
+        <ul class="mobile-menu-social-media-list">
+          <li>
+            <a class="social-media-link" href="#" target="_blank">
+              <svg class="social-media-icon">
+                <use
+                        href="./images/icons.svg#icon-instagram"
+                ></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a class="social-media-link" href="#" target="_blank">
+              <svg class="social-media-icon">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a class="social-media-link" href="#" target="_blank">
+              <svg class="social-media-icon">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a class="social-media-link" href="#" target="_blank">
+              <svg class="social-media-icon">
+                <use href="./images/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
 
     <main>
       <section class="order-section">
@@ -76,19 +150,19 @@
           <ul class="advantages-list">
             <li class="advantages-list-item">
               <div class="advantages-icon">
-                <svg width="64px" height="64px">
+                <svg>
                   <use href="./images/icons.svg#icon-antenna"></use>
                 </svg>
               </div>
               <h3 class="advantages-list-item-title">Strategy</h3>
               <p class="advantages-list-item-text">
-                Our goal is to identify the business problem to walk away with the
-                perfect and creative solution.
+                Our goal is to identify the business problem to walk away with
+                the perfect and creative solution.
               </p>
             </li>
             <li class="advantages-list-item">
               <div class="advantages-icon">
-                <svg width="64px" height="64px">
+                <svg>
                   <use href="./images/icons.svg#icon-clock"></use>
                 </svg>
               </div>
@@ -100,7 +174,7 @@
             </li>
             <li class="advantages-list-item">
               <div class="advantages-icon">
-                <svg width="64px" height="64px">
+                <svg>
                   <use href="./images/icons.svg#icon-diagram"></use>
                 </svg>
               </div>
@@ -112,8 +186,10 @@
             </li>
             <li class="advantages-list-item">
               <div class="advantages-icon">
-                <svg width="64px" height="64px">
-                  <use href="./images/icons.svg#icon-astronaut"></use>
+                <svg>
+                  <use
+                    href="./images/icons.svg#icon-astronaut"
+                  ></use>
                 </svg>
               </div>
               <h3 class="advantages-list-item-title">Technologies</h3>
@@ -134,23 +210,26 @@
             <li class="work-types-list-item">
               <img
                 src="images/main_page/monitor_mac.jpg"
+                srcset="images/main_page/monitor_mac.jpg 1x, images/main_page/monitor_mac@2x.jpg 2x"
                 alt="Monitor"
                 width="360"
-                height="300">
+              />
             </li>
             <li class="work-types-list-item">
               <img
-                src="images/main_page/mobiles_chats.jpg"
+                src="images/devices/i_phone.jpg"
+                srcset="images/main_page/mobiles_chats.jpg 1x, images/main_page/mobiles_chats@2x.jpg 2x"
                 alt="Smartphone"
                 width="360"
-                height="300">
+              />
             </li>
             <li class="work-types-list-item">
               <img
                 src="images/main_page/mobile_in_hand.jpg"
-                alt="Mobile phone and Laptop"
+                srcset="images/main_page/mobile_in_hand.jpg 1x, images/main_page/mobile_in_hand@2x.jpg 2x"
+                alt="Mobile phone and laptop"
                 width="360"
-                height="300">
+              />
             </li>
           </ul>
         </div>
@@ -164,37 +243,46 @@
             <li class="team-list-item">
               <img
                 src="images/main_page/mark_guerrero.jpg"
+                srcset="images/main_page/mark_guerrero.jpg 1x, images/main_page/mark_guerrero@2x.jpg 2x"
                 alt="Pictured is Mark Guerrero"
                 width="264"
-                height="260">
+              />
               <h3 class="team-member-name">Mark Guerrero</h3>
               <p class="team-member-role">Product Designer</p>
               <ul class="team-member-contacts">
                 <li>
                   <a class="team-member-contact-link" href="#" target="_blank">
                     <svg class="team-member-contact-icon">
-                      <use href="./images/icons.svg#icon-instagram"></use>
+                      <use
+                        href="./images/icons.svg#icon-instagram"
+                      ></use>
                     </svg>
                   </a>
                 </li>
                 <li>
                   <a class="team-member-contact-link" href="#" target="_blank">
                     <svg class="team-member-contact-icon">
-                      <use href="./images/icons.svg#icon-twitter"></use>
+                      <use
+                        href="./images/icons.svg#icon-twitter"
+                      ></use>
                     </svg>
                   </a>
                 </li>
                 <li>
                   <a class="team-member-contact-link" href="#" target="_blank">
                     <svg class="team-member-contact-icon">
-                      <use href="./images/icons.svg#icon-facebook"></use>
+                      <use
+                        href="./images/icons.svg#icon-facebook"
+                      ></use>
                     </svg>
                   </a>
                 </li>
                 <li>
                   <a class="team-member-contact-link" href="#" target="_blank">
                     <svg class="team-member-contact-icon">
-                      <use href="./images/icons.svg#icon-linkedin"></use>
+                      <use
+                        href="./images/icons.svg#icon-linkedin"
+                      ></use>
                     </svg>
                   </a>
                 </li>
@@ -203,37 +291,46 @@
             <li class="team-list-item">
               <img
                 src="images/main_page/tom_ford.jpg"
+                srcset="images/main_page/tom_ford.jpg 1x, images/main_page/tom_ford@2x.jpg 2x"
                 alt="Pictured is Tom Ford"
                 width="264"
-                height="260">
+              />
               <h3 class="team-member-name">Tom Ford</h3>
               <p class="team-member-role">Frontend Developer</p>
               <ul class="team-member-contacts">
                 <li>
                   <a class="team-member-contact-link" href="#" target="_blank">
                     <svg class="team-member-contact-icon">
-                      <use href="./images/icons.svg#icon-instagram"></use>
+                      <use
+                        href="./images/icons.svg#icon-instagram"
+                      ></use>
                     </svg>
                   </a>
                 </li>
                 <li>
                   <a class="team-member-contact-link" href="#" target="_blank">
                     <svg class="team-member-contact-icon">
-                      <use href="./images/icons.svg#icon-twitter"></use>
+                      <use
+                        href="./images/icons.svg#icon-twitter"
+                      ></use>
                     </svg>
                   </a>
                 </li>
                 <li>
                   <a class="team-member-contact-link" href="#" target="_blank">
                     <svg class="team-member-contact-icon">
-                      <use href="./images/icons.svg#icon-facebook"></use>
+                      <use
+                        href="./images/icons.svg#icon-facebook"
+                      ></use>
                     </svg>
                   </a>
                 </li>
                 <li>
                   <a class="team-member-contact-link" href="#" target="_blank">
                     <svg class="team-member-contact-icon">
-                      <use href="./images/icons.svg#icon-linkedin"></use>
+                      <use
+                        href="./images/icons.svg#icon-linkedin"
+                      ></use>
                     </svg>
                   </a>
                 </li>
@@ -242,37 +339,46 @@
             <li class="team-list-item">
               <img
                 src="images/main_page/camila_garcia.jpg"
+                srcset="images/main_page/camila_garcia.jpg 1x, images/main_page/camila_garcia@2x.jpg 2x"
                 alt="Pictured is Camila Garcia"
                 width="264"
-                height="260">
+              />
               <h3 class="team-member-name">Camila Garcia</h3>
               <p class="team-member-role">Marketing</p>
               <ul class="team-member-contacts">
                 <li>
                   <a class="team-member-contact-link" href="#" target="_blank">
                     <svg class="team-member-contact-icon">
-                      <use href="./images/icons.svg#icon-instagram"></use>
+                      <use
+                        href="./images/icons.svg#icon-instagram"
+                      ></use>
                     </svg>
                   </a>
                 </li>
                 <li>
                   <a class="team-member-contact-link" href="#" target="_blank">
                     <svg class="team-member-contact-icon">
-                      <use href="./images/icons.svg#icon-twitter"></use>
+                      <use
+                        href="./images/icons.svg#icon-twitter"
+                      ></use>
                     </svg>
                   </a>
                 </li>
                 <li>
                   <a class="team-member-contact-link" href="#" target="_blank">
                     <svg class="team-member-contact-icon">
-                      <use href="./images/icons.svg#icon-facebook"></use>
+                      <use
+                        href="./images/icons.svg#icon-facebook"
+                      ></use>
                     </svg>
                   </a>
                 </li>
                 <li>
                   <a class="team-member-contact-link" href="#" target="_blank">
                     <svg class="team-member-contact-icon">
-                      <use href="./images/icons.svg#icon-linkedin"></use>
+                      <use
+                        href="./images/icons.svg#icon-linkedin"
+                      ></use>
                     </svg>
                   </a>
                 </li>
@@ -281,37 +387,46 @@
             <li class="team-list-item">
               <img
                 src="images/main_page/daniel_wilson.jpg"
+                srcset="images/main_page/daniel_wilson.jpg 1x, images/main_page/daniel_wilson@2x.jpg 2x"
                 alt="Pictured is Daniel Wilson"
                 width="264"
-                height="260">
+              />
               <h3 class="team-member-name">Daniel Wilson</h3>
               <p class="team-member-role">UI Designer</p>
               <ul class="team-member-contacts">
                 <li>
                   <a class="team-member-contact-link" href="#" target="_blank">
                     <svg class="team-member-contact-icon">
-                      <use href="./images/icons.svg#icon-instagram"></use>
+                      <use
+                        href="./images/icons.svg#icon-instagram"
+                      ></use>
                     </svg>
                   </a>
                 </li>
                 <li>
                   <a class="team-member-contact-link" href="#" target="_blank">
                     <svg class="team-member-contact-icon">
-                      <use href="./images/icons.svg#icon-twitter"></use>
+                      <use
+                        href="./images/icons.svg#icon-twitter"
+                      ></use>
                     </svg>
                   </a>
                 </li>
                 <li>
                   <a class="team-member-contact-link" href="#" target="_blank">
                     <svg class="team-member-contact-icon">
-                      <use href="./images/icons.svg#icon-facebook"></use>
+                      <use
+                        href="./images/icons.svg#icon-facebook"
+                      ></use>
                     </svg>
                   </a>
                 </li>
                 <li>
                   <a class="team-member-contact-link" href="#" target="_blank">
                     <svg class="team-member-contact-icon">
-                      <use href="./images/icons.svg#icon-linkedin"></use>
+                      <use
+                        href="./images/icons.svg#icon-linkedin"
+                      ></use>
                     </svg>
                   </a>
                 </li>
@@ -335,7 +450,7 @@
               </a>
             </li>
             <li class="customer-list-item">
-              <a  href="#" target="_blank">
+              <a href="#" target="_blank">
                 <svg class="customer-icon" width="104" height="56">
                   <use
                     href="./images/icons.svg#icon-company-book"
@@ -434,8 +549,8 @@
         </div>
 
         <div class="subscribe-form-container">
-          <p class="subscribe-form-name">Subscribe</p>
-          <form action="#" name="subscribe-form" autocomplete="off">
+          <p class="subscribe-form-name">Subsribe</p>
+          <form action="#" name="subscribe_form" autocomplete="off">
             <input
               type="email"
               name="email"
@@ -463,7 +578,8 @@
           Leave your contacts and we will call you back
         </p>
         <form class="leave-contacts-form" name="leave_contacts_form">
-          <label class="leave-contacts-form-text-input-label" for="name-input">Name</label
+          <label class="leave-contacts-form-text-input-label" for="name-input"
+            >Name</label
           >
           <div class="leave-contacts-form-input-wrapper">
             <input
@@ -477,10 +593,9 @@
             </svg>
           </div>
 
-          <label class="leave-contacts-form-text-input-label"for="phone-input">
-            Phone
-          </label>
-          
+          <label class="leave-contacts-form-text-input-label" for="phone-input"
+            >Phone</label
+          >
           <div class="leave-contacts-form-input-wrapper">
             <input
               type="tel"
@@ -493,11 +608,11 @@
             </svg>
           </div>
 
-          <label class="leave-contacts-form-text-input-label" for="email-input">
-            Email
-          </label>
+          <label class="leave-contacts-form-text-input-label" for="email-input"
+            >Email</label
+          >
           <div class="leave-contacts-form-input-wrapper">
-            <input 
+            <input
               type="email"
               name="email"
               class="leave-contacts-form-input"
@@ -508,44 +623,44 @@
             </svg>
           </div>
 
-          <label 
-            class="leave-contacts-form-text-input-label" 
-            for="comment-input">
-            Comment
-          </label>
+          <label
+            class="leave-contacts-form-text-input-label"
+            for="comment-input"
+            >Comment</label
+          >
           <span class="leave-contacts-form-input-name"></span>
-          <textarea 
+          <textarea
             name="comment"
             placeholder="Text input"
             class="leave-contacts-form-textarea"
             id="comment-input"
-          >
-          </textarea>
+          ></textarea>
 
           <div class="leave-contacts-form-checkbox-input-wrapper">
             <div class="leave-contacts-form-checkbox-wrapper">
-              <input 
+              <input
                 type="checkbox"
                 name="accepted"
                 value="true"
                 class="leave-contacts-form-checkbox"
                 id="policy-accepted-checkbox"
               />
-              <svg class="leave-contacts-form-checkbox-icon"
+              <svg
+                class="leave-contacts-form-checkbox-icon"
                 width="10"
                 height="8"
               >
-              <use href="./images/icons.svg#checkmark"></use> 
+                <use href="./images/icons.svg#checkmark"></use>
               </svg>
             </div>
-            <label 
-              class="leave-contact-form-checkbox-label"
+            <label
+              class="leave-contacts-form-checkbox-label"
               for="policy-accepted-checkbox"
               >I accept the terms and conditions of the
               <a href="#" class="leave-contacts-form-link"
                 >Privacy Policy</a
-              >
-            </label>
+              ></label
+            >
           </div>
           <button type="submit" class="leave-contacts-form-submit-button">
             Send
@@ -561,5 +676,6 @@
     </div>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
